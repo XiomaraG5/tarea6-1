@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    
+    background:#D8E9EF url(../imagenes/background.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+header {
+    padding-top: 20px;
+    margin-bottom: 2%;
+}
+header h1 {
+    border-bottom: 1px solid #F29F05;
+    display: inline-block;
+    width: 17em;
+    text-align: right;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    color:#F29F05;
+    padding: 1%;
+}
+nav  {
+    float: right;
+    margin-top: 1.5%;
+    margin-right: 2%;
+    position: relative;
+}
+.menu li:nth-child(1),.menu li:nth-child(2),.menu li:nth-child(3) {
+    display: inline-block;
+    width: 150px;
+}
+nav ul:nth-child(2){
+    display:none;
+}
+.menu {
+    position: relative;
+    overflow: visible;
+}
+.menu li {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid #F29F05;
+}
+.menu li:hover {
+    background: rgba(84,86,91,0.4);
+} 
+.menu li a {
+    text-decoration: none;
+    color:#F29F05;
+}
+.menu li a:link {
+    color:#F29F05;
+}
+.menu li:nth-child(3):hover ul:nth-child(2){
+    display: block;
+    width: 15%;
+    position: absolute;
+    color:#F29F05;
+}
+.menu li:nth-child(3):hover ul:nth-child(2) li {
+    border: none;
+    font-weight: lighter;
+    font-size: 13px;
+    color: #54565B;
+}
+.menu li:nth-child(3):hover ul:nth-child(2) li:hover {
+    background: rgba(84,86,91,0.2);
+    border-bottom: 1px solid #F29F05;
+    color: #F29F05;
+    cursor: pointer;
+}
+.description {
+    width: 25%;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: 15%;
+    padding: 1%;
+    padding-top: 100px;
+    border-left: 1px solid #F29F05;
+    font-family: 'El Messiri', sans-serif;
+    text-align: justify;
+    line-height: 1.3;
+    font-weight: bold;
+}
+.Textos {
+    width: 65%;
+    margin-left: 3%;
+    margin-top: 3%;
+    padding: 1%;
+}
+.Textos h2 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    color:#F29F05;
+    text-align: center;
+    font-size: 30px;
+    margin: 1%;
+}
+.Textos p, .Textos dl {
+    font-family: 'El Messiri', sans-serif;
+    text-align: justify;
+    line-height: 1.3;
+    font-weight: 600;
+}
+.img-lateral1 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-top: -16%;
+    margin-left: 72%;
+    background-image: url(../imagenes/2.jpg);
+    background-size: cover;
+    background-position: center;
+    outline: 1px solid #F29F05;
+    outline-offset: 20px;
+}
+.img-lateral1::before {
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: #54565B;
+    position: absolute;
+    opacity: 0.3;
+} 
+.tradicional{
+    float: right;
+    margin-right: 7%;
+    margin-top: 6%;
+}
+.tradicional dl dt::before {
+    content: "-";
+}
+.img-latera-izq {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 1px solid #F29F05;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+.img-latera-izq img 
+{   position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-left: 1.75%;
+    margin-top: 1.75%;
+}
+.img-latera-izq::before {
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: #54565B;
+    position: absolute;
+    opacity: 0.3;
+    margin-left: 1.75%;
+    margin-top: 1.75%;
+} 
+.img-lateral2 {
+    display: inline-block;
+    background-image: url(../imagenes/1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin-top: 2%;
+    margin-left: 72%;
+    outline: 1px solid #F29F05;
+    outline-offset: 20px;
+}
+.img-lateral2::before {
+    content: "";
+    width: 250px;
+    height: 250px;
+    background-color: #54565B;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.1;
+} 
+.otros {
+    float: left;
+    margin-top: -15%;
+}
+.otros dl {
+    text-align: center;
+}
+.otros dl dt {
+    display: inline-block;
+}
+.otros dl dt::before {
+    content: " -";
+}
+footer {
+    background: #54565B;
+    color: #F2f2f2;
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
